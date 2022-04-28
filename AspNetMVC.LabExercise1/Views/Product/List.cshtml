@@ -21,14 +21,14 @@
                 <td>@product.Name</td>
                 <td>@product.Description</td>
                 <td>@product.Quantity</td>
-                <td>@string.Format("{0:₱#,##0.00;($#,##0.00);''}", @product.Price)</td>
-                <td>@string.Format("{0:₱#,##0.00;($#,##0.00);''}", @product.TotalPrice)</td>
+                <td>@string.Format("{0:₱#,##0.00;(₱#,##0.00);''}", @product.Price)</td>
+                <td>@string.Format("{0:₱#,##0.00;(₱#,##0.00);''}", @product.TotalPrice)</td>
             </tr>
         }        
         <tr>
             <td colspan="4"></td>
             <th>Grand Total:</th>
-            <td>@string.Format("{0:₱#,##0.00;($#,##0.00);''}", @grandTotal)</td>
+            <td>@string.Format("{0:₱#,##0.00;(₱#,##0.00);''}", @grandTotal)</td>
         </tr>
     </table>
 </div>
